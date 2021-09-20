@@ -1,0 +1,25 @@
+{
+  "name": "PROGECT_BATTLESHIP",
+  "version": "1.0.0",
+  "description": "Multiplayer Battleship Game",
+  "main": "SERVER/server.js",
+  "scripts": {
+    "start": "node SERVER/server.js",
+    "dev": "nodemon SERVER/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "draggabilly": "^2.3.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.6",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
