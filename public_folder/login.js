@@ -24,7 +24,7 @@ logOutButton.addEventListener('click', () => {
 
 
 function navToGame() {
-    window.location.assign(`https://battleship-progect.herokuapp.com/${mode}.html`);
+    window.location.assign(`https://battleshippro.herokuapp.com/${mode}.html`);
 }
 
 skipLogin.addEventListener('click', () => {
@@ -61,7 +61,7 @@ loginButton.addEventListener('click', () => {
         password: passInput.value,
     }
     
-        fetch('https://battleship-progect.herokuapp.com/login', {
+        fetch('https://battleshippro.herokuapp.com/login', {
             method: 'POST',
             mode: 'same-origin',
             headers: {
@@ -91,7 +91,7 @@ const data = {
     password: passInput.value,
 }
 
-    fetch('https://battleship-progect.herokuapp.com/register', {
+    fetch('https://battleshippro.herokuapp.com/register', {
         method: 'POST',
         mode: 'same-origin',
         headers: {
