@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if ((destroyerCount + submarineCount + cruiserCount + battleshipCount + carrierCount) === 50) {
       const data = { token: getUserToken(), mode: gameMode.toLowerCase() };
       
-      fetch('http://localhost:3000/score', {
+      fetch('https://battleship-progect.herokuapp.com/score', {
         method: 'PUT',
         mode: 'same-origin',
         headers: {

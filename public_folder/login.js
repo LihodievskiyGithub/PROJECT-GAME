@@ -24,7 +24,7 @@ logOutButton.addEventListener('click', () => {
 
 
 function navToGame() {
-    window.location.assign(`http://localhost:3000/${mode}.html`);
+    window.location.assign(`https://battleship-progect.herokuapp.com/${mode}.html`);
 }
 
 skipLogin.addEventListener('click', () => {
@@ -61,7 +61,7 @@ loginButton.addEventListener('click', () => {
         password: passInput.value,
     }
     
-        fetch('http://localhost:3000/login', {
+        fetch('https://battleship-progect.herokuapp.com/login', {
             method: 'POST',
             mode: 'same-origin',
             headers: {
@@ -91,7 +91,7 @@ const data = {
     password: passInput.value,
 }
 
-    fetch('http://localhost:3000/register', {
+    fetch('https://battleship-progect.herokuapp.com/register', {
         method: 'POST',
         mode: 'same-origin',
         headers: {

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function getLeaderBoardData() {
-        fetch('http://localhost:3000/score', {
+        fetch('https://battleship-progect.herokuapp.com/score', {
             method: 'GET',
             mode: 'same-origin',
             headers: {
