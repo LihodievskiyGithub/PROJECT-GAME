@@ -284,6 +284,8 @@ document.addEventListener('DOMContentLoaded', () => {
     generateShips(shipArray[3])
     generateShips(shipArray[4])
 
+    allShipsPlaced = true
+
     displayGrid.style.display = 'none'
   })
 

@@ -12,8 +12,10 @@
   </head>
   <body>
 
-    <audio src="music\AC-DC-Thunderstruck.mp3"></audio>
-    <button class="btn" id="audio" onclick="soundClick()">Поприятнее</button>
+    <audio id="audio" src="music\AC-DC-Thunderstruck.mp3"></audio>
+    <button class="btn" onclick="soundClick()">Поприятнее</button>
+    <a class="btn" href="./index.html">На главную</a>
+
 
     <div class="container">
         <div class="battleship-grid grid-user"></div>
@@ -41,11 +43,19 @@
       </div>
 
       <script>
-        let gameMode = 'singlePlayer'    
+        let gameMode = 'singlePlayer'  
+        let isMusicPlay = false
+        let x = document.getElementById('audio');
+        
+
   function soundClick() {
-    let audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = 'music\\AC-DC-Thunderstruck.mp3'; // Указываем путь к звуку "клика"
-    audio.autoplay = true; // Автоматически запускаем
+    if(!isMusicPlay){
+    x.play()
+    isMusicPlay = true;
+    } else {
+      x.pause();
+      isMusicPlay = false
+    }
   }
     </script>
 
